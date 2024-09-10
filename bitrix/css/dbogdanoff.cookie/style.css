@@ -1,0 +1,59 @@
+.legacy-cookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    color: #ffffffb8;
+}
+
+.legacy-cookie > div {
+    width: 100%;
+    padding: 12px 8px 20px;
+    background: rgb(0 0 0 / 79%);
+    font-size: 14px!important;
+    line-height: 19px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px 6px 0 0;
+    color: #f1f1f1!important;
+}
+
+.legacy-cookie img {
+    margin-left: 8px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.legacy-cookie img:hover {
+    opacity: .8
+}
+
+.legacy-cookie a {
+    text-decoration: none;
+}
+
+@media (min-width: 540px) {
+    .legacy-cookie br {
+        display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .legacy-cookie {
+        bottom: 7px
+    }
+    .legacy-cookie > div {
+        width: initial;
+        border-radius: 6px;
+        padding: 6px 12px 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .legacy-cookie--d-mob-none {
+        display: none;
+    }
+}

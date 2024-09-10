@@ -1,0 +1,120 @@
+.post-gallery {
+	position: relative;
+	margin-bottom: 70px;
+}
+.post-gallery h2 {
+	font-size:30px;
+	margin: 0 0 30px;
+}
+.post-gallery .gholder {
+	width: 100%;
+}
+.post-gallery .gholder:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+.post-gallery .gmask-center {
+	margin:0;
+}
+.post-gallery .gmask {
+	border: 1px solid #eaeaea;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	float: left;
+}
+.post-gallery .gmask .slideset {
+	list-style: none;
+	width: 99999px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.post-gallery .gmask .slide {
+	float: left;
+	width: 585px;
+	height: 293px;
+}
+.post-gallery .newsTpl .desciption h2{
+	font-size:20px;
+}
+.post-gallery .gmask .slide .newsTpl{
+	width: 100%;
+}
+
+.post-gallery a.btn-prev,
+.post-gallery a.btn-next {
+	background: url(../_i/btn-prev3.png) 0 0 no-repeat;
+	font-size: 30px;
+	line-height: 30px;
+	text-decoration: none;
+	width: 37px;
+	margin: 0 0 0 0;
+	height: 37px;
+	position: absolute;
+	text-indent: -9999px;
+	right: 90px;
+	top: 0;
+	z-index: 1000;
+}
+.post-gallery a.btn-next {
+	background: url(../_i/btn-next3.png) 0 0 no-repeat;
+	margin: 0 0 0 0;
+	right: 52px;
+}
+.post-gallery .pagination ul{
+	font-weight: bold;
+	list-style: none;
+	text-align: center;
+	padding: 5px 0;
+	margin: 0;
+}
+.post-gallery .pagination ul li {
+	padding: 0 5px;
+	display: inline;
+}
+.post-gallery .pagination a {
+	text-decoration: none;
+	color: #00f;
+}
+.post-gallery .pagination .active a {
+	color: #f00;
+}
+.post-gallery a.disabled {
+	border-color: #eee;
+	color: #eee;
+}
+.post-gallery .pagination a:hover,
+.post-gallery a.btn-prev:hover,
+.post-gallery a.btn-next:hover {text-decoration:none;}
+
+/* vertical carousel */
+.carousel2 .gmask {
+	height: 300px;
+}
+.carousel2 .gmask .slideset {
+	width: 100%;
+}
+.carousel2 .gmask .slide {
+	float: none;
+	width: auto !important;
+}
+.carousel3 .gmask .slideset {
+	width:100% !important;
+	white-space:nowrap;
+	letter-spacing: -4px;
+}
+.carousel3 .gmask .slide {
+	display:inline-block;
+	vertical-align:top;
+	float:none;
+	letter-spacing:0;
+	width:100% !important;
+}
+* html .carousel3 .gmask .slide {display:inline;}
+*+html .carousel3 .gmask .slide {display:inline;}
+.carousel3 .gmask .slide  > * {white-space:normal;}
+@media only screen and (max-width: 480px) {
+	.gallery-holder .gmask .slide {font-size:50px;}
+}
